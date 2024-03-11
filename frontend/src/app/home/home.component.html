@@ -1,0 +1,72 @@
+<div class="d-flex border border-light">
+  <!-- side bar -->
+  <div
+    style="width: 200px; height: 100vh"
+    class="sidebar bg-info p-3 d-flex flex-column"
+  >
+    <a routerLink="home">Home</a>
+    <a routerLink="/users">users</a>
+  </div>
+
+  <!-- drashboard -->
+  <div class="dashboard p-3 w-100">
+    <div class="row">
+      <div class="col-lg-8">
+        <div style="height: 150px; background-image: url('https://img.freepik.com/free-vector/colorful-watercolor-rainbow-background_125540-151.jpg'); background-size: cover;" class="admin-panel border rounded">
+        <h1 class="text-dark text-center mt-4 py-4 fw-bold">WELCOME EMPLOYEE</h1>
+        </div>
+
+        <div class="row mt-2">
+          <!-- inline calender -->
+
+          <div style="height: 400px;" class="col-lg-6 border rounded">
+           <app-calender></app-calender>
+          </div>
+
+          <!-- wheather/quites -->
+          <div style="height: 150px;" class="col-lg-6 border rounded">
+            quotes
+          </div>
+
+
+        </div>
+
+<div style="height: 250px;" class="row mt-2 border rounded">
+  <app-graph></app-graph>
+</div>
+
+
+      </div>
+      <div class="col-lg-4">
+        <!-- admin-details -->
+        <div style="height: 300px;" class="admin-details border rounded p-2">
+        
+          <form class="example-form">
+
+            <!-- input box 1 -->
+            <mat-form-field class="example-full-width">
+             
+              <input matInput placeholder="enter user name" >
+            </mat-form-field>
+
+
+            <!-- input box 2 -->
+            <mat-form-field class="example-full-width">
+             
+              <input matInput placeholder="enter password" >
+            </mat-form-field>
+
+            <button mat-raised-button color="primary">Login</button>
+
+          </form>
+        
+        
+        
+        </div>
+
+        <!-- random user -->
+        <div style="height: 200px;" class="random-user border rounded p-2 mt-5">random user</div>
+      </div>
+    </div>
+  </div>
+</div>
